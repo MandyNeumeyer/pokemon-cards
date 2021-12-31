@@ -11,7 +11,7 @@
 3. Display the following info for each pokemon: name, picture, stats and abilties.
 4. Style to your liking.
 
-
+---
 
 As a guideline how the finished product could be looking, use the reference image below.
 
