@@ -1,6 +1,8 @@
-# Pokemon Cards
+## :cartwheeling: Exercise
 
-Displays a pokemon card with data retrieved via the Pokemon Api
+### Pokemon Cards
+
+**Displays a pokemon card with data retrieved via the Pokemon Api**
 
 [Pokemon Api](https://pokeapi.co/) 
 
@@ -11,6 +13,6 @@ Displays a pokemon card with data retrieved via the Pokemon Api
 
 
 
-As a guideline how the finished product could be looking, use the reference image.
+As a guideline how the finished product could be looking, use the reference image below.
 
 ![](pokemon.gif)
