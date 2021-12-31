@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*, *::after, *::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eba9e6;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    margin-top: 5rem;
+}
+
+
+img{
+    width:10rem;
+    border:10px solid plum;
+    border-radius: 50%;
+    background-color:rgb(252, 205, 165) ;
+}
+
+
+.pokemon-element{
+    margin-top: 3rem;
+    border-radius:0.8rem;
+    background-color: peachpuff;
+    width:24rem;
+    height:44rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    border:6px solid rgb(252, 205, 165);
+}
+
+h2{
+    font-size: 1.8rem;
+    margin: 1.5rem 0rem;
+    text-transform: uppercase;
+	letter-spacing: 4px;
+	background-color: plum;
+    padding:0.5rem 1rem;
+    width:80%;
+    text-align: center;
+}
+
+.stat, .ability {
+	padding-bottom: 0.1rem;
+}
+
+h3 {
+    margin: 1.5rem 0;
+    letter-spacing: 0.2rem;
+    border-bottom: 3px solid rgb(2, 87, 82);
+}
+
+ul>li{
+    list-style: none;
+}
+
+ul:nth-of-type(1){
+    margin-bottom: 1rem;
+}
+li.stat {
+	display: flex;
+	justify-content: space-between;
+}
+
+li span{
+    margin:0 3rem;
+}
+
+form input[type='text'] {
+	background-color: #efefef;
+	padding: 0.5rem 1rem;
+	border: 1px solid #efefef;
+	border-radius: 8px;
+}
+form input[type='text']:focus{
+    outline:none;
+    border: 1px solid rgb(226, 107, 226);
+}
+
+button {
+    background-color: orange;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 8px;
+	color: #efefef;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: 0.3s;
+}
+button:hover {
+	background-color:rgb(236, 154, 2);
+	box-shadow: 1px 2px #936997;
+}
+ul:nth-of-type(2){
+    margin-bottom: 1.5rem;
+}
