@@ -1,4 +1,4 @@
-## :cartwheeling: Exercise
+## :cartwheeling: Exercise :weight_lifting:
 
 ### Pokemon Cards
 
