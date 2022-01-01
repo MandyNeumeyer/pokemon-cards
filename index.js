@@ -13,7 +13,7 @@ async function fetchData(e) {
     const url = await `https://pokeapi.co/api/v2/pokemon/${input.value.toLowerCase()}`
     console.log(input);
     if (!input.value){
-        input.setAttribute('placeholder', "nothing entered?")
+        input.setAttribute('placeholder', "nothing was entered?")
     }
     input.value = ""
     if (pokemonContainer.children.length > 0) {
