@@ -10,7 +10,8 @@ btn.addEventListener('click', fetchData)
 async function fetchData(e) {
     e.preventDefault()
     input.setAttribute('placeholder', "search pokemon ...")
-    const url = await `https://pokeapi.co/api/v2/pokemon/${input.value.toLowerCase()}`
+    const userInput = input.value.toLowerCase()
+    const url = await `https://pokeapi.co/api/v2/pokemon/${userInput}`
     console.log(input);
     if (!input.value){
         input.setAttribute('placeholder', "nothing was entered?")
