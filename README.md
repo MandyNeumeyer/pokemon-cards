@@ -2,7 +2,7 @@
 
 ### Pokemon Cards
 
-**Displays a pokemon card with data retrieved via the Pokemon Api**
+**Displays a pokemon card with data retrieved via the Pokemon Api.**
 
 [Pokemon Api](https://pokeapi.co/) 
 
