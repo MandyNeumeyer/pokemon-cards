@@ -64,6 +64,6 @@ function displayData(obj) {
 			${obj.abilities.map(power =>
                 `<li class='ability'>${power.ability.name}</li>`).join('')}
 		</ul>
-                            `
+        `
     pokemonContainer.appendChild(pokemonElement)
 }
