@@ -5,21 +5,22 @@ pokemonElement.classList.add("pokemon-element")
 const btn = document.querySelector('button')
 btn.addEventListener('click', fetchData)
 
-
+input.onfocus=()=> {
+    input.setAttribute('placeholder', "search pokemon ...")
+    input.style.border='1px solid rgb(226, 107, 226)'
+}
 
 async function fetchData(e) {
     e.preventDefault()
-    input.setAttribute('placeholder', "search pokemon ...")
+    if(!input.value){
+        input.style.border = '1px solid red';
+        input.setAttribute('placeholder', "nothing entered")
+        return
+    }
     const userInput = input.value.toLowerCase()
     const url = await `https://pokeapi.co/api/v2/pokemon/${userInput}`
     console.log(input);
-    if (!input.value){
-        input.setAttribute('placeholder', "nothing was entered?")
-    }
     input.value = ""
-    if (pokemonContainer.children.length > 0) {
-        pokemonContainer.removeChild(pokemonElement)
-    }
     fetch(url)
         .then((response) => {
             if (response.ok) {
@@ -39,12 +40,16 @@ async function fetchData(e) {
             displayData(pokemonObj)
         })
         .catch((error) => {
-            console.log('Something went wrong.', error);
+            input.setAttribute('placeholder', 'pokemon not found')
+            input.style.border = '1px solid red';
         });
+    
 }
 
 function displayData(obj) {
-
+    if (pokemonContainer.children.length > 0) {
+        pokemonContainer.removeChild(pokemonElement)
+    }
     pokemonElement.innerHTML =
         `<h2>${obj.name}</h2>
         <img src="${obj.imgFront}"/>
