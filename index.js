@@ -19,8 +19,8 @@ async function fetchData(e) {
     }
     const userInput = input.value.toLowerCase()
     const url = await `https://pokeapi.co/api/v2/pokemon/${userInput}`
-    console.log(input);
     input.value = ""
+    
     fetch(url)
         .then((response) => {
             if (response.ok) {
