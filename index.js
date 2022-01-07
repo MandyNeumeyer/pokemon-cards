@@ -40,6 +40,7 @@ async function fetchData(e) {
             displayData(pokemonObj)
         })
         .catch((error) => {
+            console.log(error);
             input.setAttribute('placeholder', 'pokemon not found')
             input.style.border = '1px solid red';
         });
