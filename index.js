@@ -7,7 +7,7 @@ btn.addEventListener('click', fetchData)
 
 input.onfocus=()=> {
     input.setAttribute('placeholder', "search pokemon ...")
-    input.style.border='1px solid rgb(226, 107, 226)'
+    input.style.border='1px solid rgb(255, 153, 0)'
 }
 
 async function fetchData(e) {
