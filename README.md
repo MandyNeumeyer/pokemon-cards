@@ -15,4 +15,4 @@
 
 As a guideline how the finished product could be looking, use the reference image below.
 
-![](pokemon.jpeg)
+![](poke.gif)
