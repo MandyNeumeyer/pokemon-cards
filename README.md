@@ -1,8 +1,6 @@
-## :cartwheeling: Exercise :weight_lifting:
+# Pokemon Cards
 
-### Pokemon Cards
-
-**Displays a pokemon card with data retrieved via the Pokemon Api.**
+**This :cartwheeling: Exercise :weight_lifting: is to display a pokemon card with data retrieved via the Pokemon Api.**
 
 [Pokemon Api](https://pokeapi.co/) 
 
